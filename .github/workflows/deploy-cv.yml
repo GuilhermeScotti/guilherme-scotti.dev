@@ -28,7 +28,7 @@ jobs:
       - name: Prepare deployment (cv at /cv)
         run: |
           mkdir -p publish/cv
-          cp cv/index.html cv/styles.css publish/cv/
+          cp cv/index.html cv/styles.css cv/favicon.ico cv/favicon-96x96.png publish/cv/
           echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0;url=cv/"><script>location.replace("cv/")</script></head><body><a href="cv/">CV</a></body></html>' > publish/index.html
 
       - name: Setup Pages
