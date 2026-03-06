@@ -28,7 +28,7 @@ jobs:
       - name: Prepare deployment (cv at /cv)
         run: |
           mkdir -p publish/cv
-          cp cv/index.html cv/styles.css cv/favicon.ico cv/favicon-96x96.png publish/cv/
+          cp cv/index.html cv/index-pt.html cv/styles.css cv/favicon.ico cv/favicon-96x96.png publish/cv/
           cp cv/favicon.ico cv/favicon-96x96.png publish/
           echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><link rel="icon" type="image/x-icon" href="favicon.ico" /><link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" /><meta http-equiv="refresh" content="0;url=cv/"><script>location.replace("cv/")</script></head><body><a href="cv/">CV</a></body></html>' > publish/index.html
 
