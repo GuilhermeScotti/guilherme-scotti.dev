@@ -378,4 +378,9 @@ a:hover {
   .export-controls {
     display: none;
   }
+
+  .section-title {
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
 }
