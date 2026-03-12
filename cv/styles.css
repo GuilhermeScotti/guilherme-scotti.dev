@@ -299,6 +299,10 @@ a:hover {
   margin-bottom: 2px;
 }
 
+.experience-reference {
+  margin-top: 8px;
+}
+
 .education-list {
   list-style: none;
   padding: 0;
