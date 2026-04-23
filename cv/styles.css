@@ -173,10 +173,7 @@ a:hover {
 .header {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 }
 
 .header-main {
@@ -221,6 +218,11 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.section--divided {
+  padding-top: 14px;
+  border-top: 1px solid var(--border-subtle);
+}
+
 .section-title {
   font-size: 13px;
   letter-spacing: 0.22em;
@@ -229,30 +231,34 @@ a:hover {
   margin: 0 0 8px;
 }
 
+.summary {
+  margin: 0;
+}
+
 .tags {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 4px;
 }
 
 .tags li {
   background: var(--tag-bg);
   border-radius: 999px;
-  padding: 6px 10px;
+  padding: 3px 8px;
   font-size: 12px;
   color: var(--tag-text);
   border: 1px solid var(--tag-border);
 }
 
 .experience-item {
-  padding: 10px 12px 10px;
+  padding: 6px 8px;
   border-radius: var(--radius-md);
   border: 1px solid var(--experience-border);
   background: var(--experience-bg);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .experience-item:last-of-type {
@@ -268,14 +274,32 @@ a:hover {
 
 .experience-role {
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
+  color: var(--text-main);
+  display: inline;
 }
 
 .experience-company {
   margin: 0;
   font-size: 13px;
+  font-weight: 600;
   color: var(--text-muted);
+  display: inline;
+}
+
+.experience-period {
+  font-size: 13px;
+  color: var(--text-muted);
+  display: inline;
+}
+
+.experience-header .experience-company::before,
+.experience-header .experience-period::before {
+  content: ' · ';
+  color: var(--text-muted);
+  font-style: normal;
+  font-weight: 400;
 }
 
 .experience-context {
@@ -284,7 +308,7 @@ a:hover {
 }
 
 .experience-tech {
-  margin: 0 0 4px;
+  margin: 8px 0 0;
   font-size: 12px;
   color: var(--text-muted);
 }
@@ -300,7 +324,9 @@ a:hover {
 }
 
 .experience-reference {
-  margin-top: 8px;
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--text-muted);
 }
 
 .education-list {
@@ -309,14 +335,21 @@ a:hover {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   font-size: 13px;
 }
 
+.education-list li {
+  display: block;
+}
+
 .education-main {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
+  display: inline;
+}
+
+.education-institution::before,
+.education-meta::before {
+  content: '\00a0- ';
 }
 
 .education-degree {
@@ -332,7 +365,37 @@ a:hover {
   color: var(--text-muted);
 }
 
+.languages {
+  margin: 0;
+  font-size: 13px;
+}
+
+.language-name {
+  font-weight: 500;
+}
+
+.language-detail {
+  color: var(--text-muted);
+}
+
+@page {
+  margin: 12.7mm;
+}
+
 @media print {
+  /* Preserve PDF copy-paste integrity: no hyphenation, no letter/word spacing that splits glyph runs */
+  /* Force Arial to stabilize PDF text-run encoding — system-ui fonts vary in how Chrome serializes glyphs */
+  * {
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    -ms-hyphens: none !important;
+    letter-spacing: normal !important;
+    font-feature-settings: normal !important;
+    font-variant: normal !important;
+    font-kerning: none !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
   /* Force light theme for print/PDF: ATS-friendly, readable, no dark backgrounds */
   :root {
     --page-bg: #ffffff;
@@ -377,6 +440,12 @@ a:hover {
     border-color: #d1d5db;
     background: #f3f4f6;
     color: #111827;
+  }
+
+  /* Invisible comma separators for ATS text extraction in PDF only */
+  .tags li:not(:last-child)::after {
+    content: ', ';
+    color: transparent;
   }
 
   .export-controls {

@@ -28,8 +28,10 @@
       <header class="header">
         <div class="header-main">
           <h1 class="name">Guilherme Scotti</h1>
-          <p class="title">Senior Software Engineer</p>
-          <p class="subtitle">C# .NET · TypeScript · React Native</p>
+          <p class="title">
+            Senior Software Engineer ·
+            <span class="subtitle">Mobile · Full Stack · C# .NET · TypeScript · React Native</span>
+          </p>
         </div>
         <div class="header-meta">
           <span>Blumenau, SC, Brazil</span>
@@ -37,64 +39,73 @@
           <span><a href="tel:+5547996537388">+55 47 99653-7388</a></span>
           <span> · </span>
           <span><a href="mailto:glscotti@hotmail.com">glscotti@hotmail.com</a></span>
-          <br />
+          <span> · </span>
           <span
             ><a href="https://www.linkedin.com/in/gui-scotti/" target="_blank" rel="noreferrer"
-              >linkedin.com/in/gui-scotti</a
+              >LinkedIn</a
             ></span
           >
           <span> · </span>
           <span
             ><a href="https://github.com/GuilhermeScotti" target="_blank" rel="noreferrer"
-              >github.com/GuilhermeScotti</a
-            ></span
-          >
-          <span> · </span>
-          <span
-            ><a href="https://guilhermescotti.github.io/guilherme-scotti.dev"
-              >guilhermescotti.github.io/guilherme-scotti.dev</a
+              >GitHub</a
             ></span
           >
         </div>
       </header>
 
-      <section class="section">
+      <section class="section section--divided">
         <h2 class="section-title">Summary</h2>
         <p class="summary">
-          Senior Software Engineer with 7+ years of experience building backend systems and client
-          applications. Developed production iOS applications using TypeScript, React Native, and
-          Firebase, and enterprise platforms using C# .NET.
+          Senior Software Engineer with 7+ years of experience building mobile, desktop, and
+          full-stack applications. Currently working on a production iOS podcast platform using
+          TypeScript, React Native, and Firebase, with full-stack responsibilities across client
+          applications, backend services, and distributed systems. Background in C# and .NET
+          enterprise systems, designing internal frameworks and contributing to system architecture,
+          applying SOLID, Clean Code, and dependency injection with focus on maintainability and
+          scalability. Fluent in English, communicating daily in remote roles with US-based
+          companies for over 2 years. Daily user of AI-assisted development tools such as Claude
+          Code and Cursor to improve productivity and code quality.
         </p>
       </section>
-
       <section class="section">
         <h2 class="section-title">Technologies</h2>
         <ul class="tags">
           <li>TypeScript</li>
-          <li>C# .NET</li>
+          <li>C#</li>
+          <li>.NET</li>
           <li>React Native</li>
           <li>React</li>
           <li>Firebase (Functions, Firestore, Storage, Auth)</li>
-          <li>SQL, NoSQL</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+          <li>NoSQL</li>
           <li>REST APIs</li>
-          <li>Git, GitHub</li>
+          <li>GCP</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>GitLab</li>
           <li>Datadog</li>
           <li>Statsig</li>
-          <li>Claude Code, Cursor IDE</li>
+          <li>Claude Code</li>
+          <li>Cursor IDE</li>
         </ul>
       </section>
 
       <section class="section">
         <h2 class="section-title">Core Competencies</h2>
         <ul class="tags">
-          <li>Backend &amp; Application Logic Design</li>
-          <li>Asynchronous, Event-Driven Systems</li>
-          <li>Cloud, Serverless Backend</li>
-          <li>API Integration, Data Modeling</li>
-          <li>Software Architecture Principles (SOLID, DI)</li>
+          <li>Backend Development</li>
+          <li>Mobile Development</li>
+          <li>Asynchronous &amp; Distributed Systems</li>
+          <li>Event-Driven Architecture</li>
+          <li>Cloud &amp; Serverless Backend (GCP, Firebase)</li>
+          <li>API Design &amp; Integration</li>
+          <li>Data Modeling</li>
+          <li>Software Architecture Principles (SOLID, OOP, Design Patterns, IoC, DI)</li>
           <li>Clean Code</li>
           <li>Observability (Logging, Monitoring)</li>
-          <li>AI-Assisted Development (Claude Code, Cursor, Codex)</li>
+          <li>AI-Assisted Development</li>
         </ul>
       </section>
 
@@ -105,25 +116,28 @@
           <header class="experience-header">
             <div>
               <h3 class="experience-role">Senior Software Engineer</h3>
-              <p class="experience-company">Superphonic, USA (September 2024 – Present), Remote</p>
+              <p class="experience-company">Superphonic</p>
+              <span class="experience-period">Sep 2024 – Present · USA (Remote)</span>
             </div>
           </header>
           <p class="experience-context">
-            Production iOS podcast platform built with React Native and Firebase backend.
-          </p>
-          <p class="experience-tech">
-            Tech: TypeScript, React Native, Swift, Objective-C, Firebase (Functions, Firestore,
-            Storage, Auth), Datadog, Statsig, Git, GitHub, Xcode, Claude Code, Cursor IDE, Codex
+            Production iOS podcast platform built with React Native and a Firebase serverless
+            backend.
           </p>
           <ul class="experience-list">
             <li>
-              Delivered core product features including share links end-to-end (web, mobile,
+              Delivered core product features end-to-end including share links (web, mobile,
               backend), transcription synchronization, Smart Speed, and social login for a
               production podcast platform.
             </li>
             <li>
-              Designed and maintained serverless backend components using Firebase Cloud Functions
-              and Firestore data models.
+              Built end-to-end async audio transcription via Firebase Functions and a Python GCP
+              job, surfacing AI transcripts to users on completion — cutting third-party API costs
+              ~4×.
+            </li>
+            <li>
+              Designed and maintained serverless backend components using Firebase Cloud Functions,
+              Firestore data models, authentication flows, and media handling.
             </li>
             <li>
               Implemented asynchronous workflows across client and backend to orchestrate operations
@@ -131,69 +145,79 @@
             </li>
             <li>
               Integrated native iOS functionality via Swift and Objective-C, bridging custom modules
-              into the React Native layer when required.
+              into the React Native layer.
             </li>
             <li>
               Established observability and feature instrumentation using Datadog and Statsig to
               support monitoring and product decisions.
             </li>
             <li>
-              Contributed to application architecture and technical decisions in close collaboration
-              with product and design.
+              Drove application architecture and technical decisions in close collaboration with
+              product and design.
             </li>
-            <li>Participated in code reviews and architectural discussions.</li>
-            <li>Contributed to the website and docs platform using React and Astro.</li>
+            <li>
+              Participated in code reviews and architectural discussions; contributed to the web and
+              docs platform using React and Astro.
+            </li>
+            <li>
+              Daily user of Claude Code and Cursor for code generation, debugging, and PR reviews.
+            </li>
           </ul>
+          <p class="experience-tech">
+            Stack: TypeScript, React Native, Swift, Objective-C, Firebase (Functions, Firestore,
+            Storage, Auth), Datadog, Statsig, Git, GitHub, Xcode, Claude Code, Cursor IDE, Codex,
+            Astro, React, Tailwind CSS, Node.js, GCP, Python
+          </p>
         </section>
 
         <section class="experience-item">
           <header class="experience-header">
             <div>
               <h3 class="experience-role">Senior Software Developer</h3>
-              <p class="experience-company">
-                OpenAI, USA (April 2024 – August 2024), Remote · via Truelogic
-              </p>
+              <p class="experience-company">OpenAI</p>
+              <span class="experience-period"
+                >Apr 2024 – Aug 2024 · USA (Remote) · via Truelogic</span
+              >
             </div>
           </header>
           <p class="experience-context">
             Desktop client application for interacting with a conversational AI backend platform.
           </p>
-          <p class="experience-tech">
-            Tech: C# 12, .NET 8.0, GraphQL (Strawberry Shake), XAML, WinUI, Moq, GitHub, SOLID,
-            Dependency Injection, Clean Code
-          </p>
           <ul class="experience-list">
-            <li>Developed the client-side communication layer for a chatbot backend API.</li>
             <li>
-              Designed abstractions and services to manage HTTP interactions, file transfers, and
-              incremental server responses via WebSocket.
+              Developed the client-side communication layer for a chatbot backend API, handling HTTP
+              and WebSocket interactions.
+            </li>
+            <li>
+              Designed abstractions and services to manage messaging, file transfers, and real‑time
+              incremental server responses.
             </li>
             <li>
               Implemented event-driven mechanisms to propagate backend updates to higher-level
-              modules, enabling real-time chatbot functionality.
+              modules, enabling real‑time chatbot functionality.
             </li>
             <li>
               Applied SOLID principles, dependency injection, and clean architectural patterns to
               ensure testability and maintainability.
             </li>
             <li>
-              Contributed to core application logic and conversation flow improvements across the
-              chatbot platform.
-            </li>
-            <li>
               Built mock communication layer implementations to enable isolated testing without
               backend dependencies.
             </li>
             <li>
-              Participated in partial migration to GraphQL using Strawberry Shake, implementing
-              queries, fragments, and subscriptions.
+              Contributed to migrating the API layer to GraphQL using Strawberry Shake —
+              implementing queries, fragments, and subscriptions.
             </li>
             <li>
-              Implemented UI features in XAML, including asynchronous file upload previews with
+              Implemented UI features in XAML including asynchronous file upload previews with
               progress feedback.
             </li>
           </ul>
-          <p class="experience-company experience-reference">
+          <p class="experience-tech">
+            Stack: C# 12, .NET 8.0, GraphQL (Strawberry Shake), XAML, WinUI, Moq, GitHub, SOLID, DI,
+            Clean Code, OOP, MVVM
+          </p>
+          <p class="experience-reference">
             Reference:
             <a href="./openai-letter.pdf" target="_blank" rel="noreferrer"
               >OpenAI recommendation letter (link)</a
@@ -205,81 +229,75 @@
           <header class="experience-header">
             <div>
               <h3 class="experience-role">Senior Software Developer</h3>
-              <p class="experience-company">
-                CP-Pro Solutions GmbH, Germany (January 2020 – April 2024), via CP-Pro Brasil &amp;
-                AMcom
-              </p>
+              <p class="experience-company">CP-Pro Solutions</p>
+              <span class="experience-period"
+                >Jan 2020 – Apr 2024 · Germany (Remote) · via CP-Pro Brasil</span
+              >
             </div>
           </header>
           <p class="experience-context">
-            Enterprise ERP platform with WPF desktop client and .NET Web API backend.
-          </p>
-          <p class="experience-tech">
-            Tech: C# .NET, MVVM, ASP.NET MVC, OData, SQL, xUnit, Moq, GitLab, TeamCity CI/CD
+            Enterprise ERP platform with a C# .NET REST API backend and WPF desktop client.
           </p>
           <ul class="experience-list">
             <li>
-              Delivered full-stack features and fixes across a large enterprise ERP system with WPF
-              desktop client and REST Web API backend.
+              Delivered full-stack features across a large enterprise ERP with WPF desktop client
+              and a REST API backend.
             </li>
             <li>
               Served as right-hand developer to the software architect and technical reference for a
               team of five developers.
             </li>
             <li>
-              Designed and implemented an MVVM framework applying SOLID, dependency injection, and
-              clean architectural patterns.
+              Co-designed and implemented an internal MVVM framework applying SOLID, dependency
+              injection, and clean architectural patterns.
+            </li>
+            <li>
+              Resolved a critical latency issue on a deep relational query by splitting execution
+              between OData queryable endpoints and direct Entity Framework calls, significantly
+              reducing response times.
             </li>
             <li>
               Conducted code reviews and approved merge requests, ensuring adherence to
               architectural guidelines and code quality standards.
             </li>
             <li>
-              Collaborated with a distributed German team, maintaining regular technical
-              communication in English.
-            </li>
-            <li>
-              Contributed to a standalone 3D CAD application using WPF 3D for modeling and
-              visualization.
-            </li>
-            <li>
-              Had a pivotal role in a major performance refactor by redesigning mesh generation
-              logic, merging 3D meshes to significantly reduce rendering overhead.
+              Drove a major performance refactor in a 3D CAD application by redesigning mesh
+              generation logic and merging 3D meshes, significantly reducing rendering overhead.
             </li>
           </ul>
+          <p class="experience-tech">
+            Stack: C# .NET, WPF (MVVM, XAML), ASP.NET MVC, OData, OWIN, Entity Framework ORM, SQL,
+            xUnit, Moq, Git, GitLab, REST API, TeamCity CI/CD, JetBrains Rider
+          </p>
         </section>
 
         <section class="experience-item">
           <header class="experience-header">
             <div>
               <h3 class="experience-role">Software Developer</h3>
-              <p class="experience-company">
-                NeoPlan, WEG, Benner — Early Career (January 2019 – January 2020)
-              </p>
+              <p class="experience-company">NeoPlan · WEG · Benner — Early Career</p>
+              <span class="experience-period">Jan 2019 – Jan 2020 · Brazil</span>
             </div>
           </header>
-          <p class="experience-context">Industrial automation tools.</p>
-          <p class="experience-tech">
-            Tech: C# .NET, WPF (MVVM), Windows Forms, SQL, Git, AutoCAD .NET API
+          <p class="experience-context">
+            Industrial automation tools, CAD plugins, and enterprise desktop applications.
           </p>
           <ul class="experience-list">
             <li>
-              Developed C# desktop applications and automation tools across industrial, CAD, and
-              enterprise business domains.
+              Built AutoCAD and BricsCAD plugins with C# .NET that automated industrial piping
+              design workflows, implementing geometric processing for 3D project generation and
+              replacing third-party licensed tools — core features remain in production use today.
             </li>
             <li>
-              Built AutoCAD and BricsCAD plugins to automate industrial piping design workflows,
-              including 3D modeling features still in use.
+              Developed C# desktop applications across industrial, CAD, and enterprise business
+              domains.
             </li>
-            <li>
-              Collaborated with engineers and designers to translate domain requirements into robust
-              software solutions.
-            </li>
-            <li>
-              Maintained and extended legacy systems (Delphi, VB, SQL) and supported reporting
-              initiatives using Power BI.
-            </li>
+            <li>Maintained and extended legacy systems (Delphi, VB, SQL).</li>
           </ul>
+          <p class="experience-tech">
+            Stack: C# .NET, WPF (MVVM, XAML), Windows Forms, SQL, Git, AutoCAD .NET API, BricsCAD
+            SDK
+          </p>
         </section>
       </section>
 
@@ -288,26 +306,30 @@
         <ul class="education-list">
           <li>
             <div class="education-main">
-              <span class="education-degree"> Associate's degree, Software Engineering </span>
-              <span class="education-institution"> Universidade Cruzeiro do Sul </span>
+              <span class="education-degree">Associate's degree, Software Engineering</span>
+              <span class="education-institution">Universidade Cruzeiro do Sul</span>
             </div>
             <span class="education-meta">2019 – 2021</span>
           </li>
           <li>
             <div class="education-main">
-              <span class="education-degree"> Bachelor of Business Administration </span>
-              <span class="education-institution"> Universidade Regional de Blumenau </span>
+              <span class="education-degree">Bachelor of Business Administration</span>
+              <span class="education-institution">Universidade Regional de Blumenau</span>
             </div>
             <span class="education-meta">2009 – 2013</span>
           </li>
-          <li>
-            <div class="education-main">
-              <span class="education-degree"> MBA, Master of Business Administration </span>
-              <span class="education-institution">UniCesumar</span>
-            </div>
-            <span class="education-meta">2018 – 2020</span>
-          </li>
         </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Languages</h2>
+        <p class="languages">
+          <span class="language-name">English -</span>
+          <span class="language-detail">Fluent</span>
+          |
+          <span class="language-name">Portuguese -</span>
+          <span class="language-detail">Native</span>
+        </p>
       </section>
       <div class="export-controls export-controls--bottom">
         <span class="lang-selector" aria-label="Language">
