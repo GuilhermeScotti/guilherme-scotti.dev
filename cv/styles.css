@@ -277,7 +277,6 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   color: var(--text-main);
-  display: inline;
 }
 
 .experience-company {
@@ -285,12 +284,17 @@ a:hover {
   font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
-  display: inline;
 }
 
 .experience-period {
   font-size: 13px;
   color: var(--text-muted);
+}
+
+/* Scope inline flow to the header only so other uses of these classes (e.g. experience-reference) keep block layout */
+.experience-header .experience-role,
+.experience-header .experience-company,
+.experience-header .experience-period {
   display: inline;
 }
 
